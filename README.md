@@ -79,6 +79,11 @@ Muudab arvuti aja Eesti Ajatsooniks
 ### TAB 2 CLI
 
 Tekstikasti sisu väljastatakse kasti all, kodutöö nõudis seda.
+
+### TAB 3 Script
+
+Runnib sinu sisestatud teksti scriptina, ning valjastab teksti nuppu alla
+
 ## Installation
 
 kopeerid terve kausta kuhu soovid
