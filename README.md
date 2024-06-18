@@ -11,9 +11,9 @@ Siin on minu tunnitoo
 
 ## Scriptid
 
-#### Enable Amogus
+#### Enable WSL
 
-Avab pildi tegelasest, said motted ning aeg otsa
+lubab seadmes kasutada WSL(Windows Subsystem for Linux), nouab restarti
 
 
 #### Delete Temp
