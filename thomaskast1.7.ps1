@@ -321,17 +321,17 @@ $ristkast5.Add_CheckStateChanged({
 
 # Vaheleht3
 
-# Text field
+#sisend
 $scriptTextField = New-Object System.Windows.Forms.TextBox
 $scriptTextField.Location = New-Object System.Drawing.Point(10,10)
 $scriptTextField.Size = New-Object System.Drawing.Size(760,200)
 
-# Label
+#silt
 $scriptLabel = New-Object System.Windows.Forms.Label
 $scriptLabel.Location = New-Object System.Drawing.Point(10,250)
 $scriptLabel.Size = New-Object System.Drawing.Size(760,100)
 
-# Button
+#nupp
 $scriptButton = New-Object System.Windows.Forms.Button
 $scriptButton.Location = New-Object System.Drawing.Point(10,210)
 $scriptButton.Size = New-Object System.Drawing.Size(760,23)
@@ -353,7 +353,7 @@ $vaheleht3.Controls.Add($scriptTextField)
 $vaheleht3.Controls.Add($scriptLabel)
 $vaheleht3.Controls.Add($scriptButton)
 
-# Add the new tab to the tab control
+# lisa uus tab menuusse
 $vahelehekontroll.TabPages.Add($vaheleht3)
 
 $vaheleht1.Controls.Add($ristkast5)
