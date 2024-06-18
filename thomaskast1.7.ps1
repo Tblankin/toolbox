@@ -319,6 +319,42 @@ $ristkast5.Add_CheckStateChanged({
    $vorm.Refresh()
 })
 
+# Vaheleht3
+
+# Text field
+$scriptTextField = New-Object System.Windows.Forms.TextBox
+$scriptTextField.Location = New-Object System.Drawing.Point(10,10)
+$scriptTextField.Size = New-Object System.Drawing.Size(760,200)
+
+# Label
+$scriptLabel = New-Object System.Windows.Forms.Label
+$scriptLabel.Location = New-Object System.Drawing.Point(10,250)
+$scriptLabel.Size = New-Object System.Drawing.Size(760,100)
+
+# Button
+$scriptButton = New-Object System.Windows.Forms.Button
+$scriptButton.Location = New-Object System.Drawing.Point(10,210)
+$scriptButton.Size = New-Object System.Drawing.Size(760,23)
+$scriptButton.Text = "Run Script"
+$scriptButton.Add_Click({
+    $scriptText = $scriptTextField.Text
+    try {
+        $output = Invoke-Expression $scriptText
+        $scriptLabel.Text = "Result: $output"
+    } catch {
+        $scriptLabel.Text = "Error: $_"
+    }
+})
+
+$vaheleht3 = New-Object System.Windows.Forms.TabPage
+$vaheleht3.Text = "Script"
+$vaheleht3.BackColor = [System.Drawing.Color]::white
+$vaheleht3.Controls.Add($scriptTextField)
+$vaheleht3.Controls.Add($scriptLabel)
+$vaheleht3.Controls.Add($scriptButton)
+
+# Add the new tab to the tab control
+$vahelehekontroll.TabPages.Add($vaheleht3)
 
 $vaheleht1.Controls.Add($ristkast5)
 
